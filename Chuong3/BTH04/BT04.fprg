@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="thao4"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-11-22 04:59:04 CH"/>
+        <attribute name="created" value="dGhhbzQ7REVTS1RPUC1GS0NVVk5UOzIwMjEtMTEtMjI7MDQ6NTE6MjUgQ0g7Mjg2Mg=="/>
+        <attribute name="edited" value="dGhhbzQ7REVTS1RPUC1GS0NVVk5UOzIwMjEtMTEtMjI7MDQ6NTQ6MTYgQ0g7Mjt0aGFvNDtERVNLVE9QLUZLQ1VWTlQ7MjAyMS0xMS0yMjswNDoyNDo1MCBDSDtMdXVkb19wdGIyLmZwcmc7NzQyMQ=="/>
+        <attribute name="edited" value="dGhhbzQ7REVTS1RPUC1GS0NVVk5UOzIwMjEtMTEtMjI7MDQ6NTk6MDQgQ0g7MTsyOTc1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, t, temp, sum, count" type="Integer" array="False" size=""/>
+            <output expression="&quot;Nhap vao so nguyen duong&quot;" newline="True"/>
+            <input variable="n"/>
+            <while expression="n&lt;0">
+                <output expression="&quot;Khong hop le. Nhap lai:&quot;" newline="True"/>
+                <input variable="n"/>
+            </while>
+            <assign variable="t" expression="n"/>
+            <assign variable="sum" expression="0"/>
+            <assign variable="count" expression="0"/>
+            <while expression="t&gt;0">
+                <assign variable="temp" expression="t%10"/>
+                <assign variable="t" expression="t/10"/>
+                <assign variable="sum" expression="sum+temp"/>
+                <assign variable="count" expression="count +1"/>
+            </while>
+            <output expression="&quot;n co so chu so la:&quot;" newline="True"/>
+            <output expression="count" newline="True"/>
+            <output expression="&quot;Tong cac chu so la:&quot;" newline="True"/>
+            <output expression="sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

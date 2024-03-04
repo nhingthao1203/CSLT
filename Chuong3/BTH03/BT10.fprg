@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="thao4"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-11-22 01:43:16 CH"/>
+        <attribute name="created" value="dGhhbzQ7REVTS1RPUC1GS0NVVk5UOzIwMjEtMTEtMjI7MDE6MjA6MzUgQ0g7Mjg1Ng=="/>
+        <attribute name="edited" value="dGhhbzQ7REVTS1RPUC1GS0NVVk5UOzIwMjEtMTEtMjI7MDE6NDM6MTYgQ0g7NDsyOTcx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, kt" type="Integer" array="False" size=""/>
+            <output expression="&quot;Nhap vao n:&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="kt" expression="n%2"/>
+            <if expression="kt==0">
+                <then>
+                    <output expression="&quot; n la so chan&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;n la so le&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="thao4"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-11-22 05:44:06 CH"/>
+        <attribute name="created" value="dGhhbzQ7REVTS1RPUC1GS0NVVk5UOzIwMjEtMTEtMjI7MDQ6MjQ6NTAgQ0g7Mjg2MA=="/>
+        <attribute name="edited" value="dGhhbzQ7REVTS1RPUC1GS0NVVk5UOzIwMjEtMTEtMjI7MDU6NDQ6MDYgQ0g7MzsyOTc0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <output expression="&quot;Nhap a,b,c&quot;" newline="True"/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <if expression="a + b &lt; c || b + c &lt; a || a + c &lt; b">
+                <then>
+                    <output expression="&quot;a, b, c khong tao thanh tam giac&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="a==b &amp;&amp; a==c">
+                        <then>
+                            <output expression="&quot; Day la tam giac deu&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="a*a + b*b == c*c || c*c + b*b == a*a || a*a + c*c == b*b">
+                                <then>
+                                    <if expression="a==b ||a==c || b==c">
+                                        <then>
+                                            <output expression="&quot;Day la tam giac vuong can&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Day la tam giac vuong&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <if expression="a==b || a==c ||b==c">
+                                        <then>
+                                            <output expression="&quot;Day la tam giac can&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Day la tam giac thuong&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

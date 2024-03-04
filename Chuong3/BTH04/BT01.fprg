@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="thao4"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-11-22 08:35:02 SA"/>
+        <attribute name="created" value="dGhhbzQ7REVTS1RPUC1GS0NVVk5UOzIwMjEtMTEtMjI7MDg6MDc6NTMgU0E7Mjg3Nw=="/>
+        <attribute name="edited" value="dGhhbzQ7REVTS1RPUC1GS0NVVk5UOzIwMjEtMTEtMjI7MDg6MzU6MDIgU0E7MTsyOTgw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, sum, i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="1"/>
+            <assign variable="sum" expression="0"/>
+            <output expression="&quot;Nhap vao n:&quot;" newline="True"/>
+            <input variable="n"/>
+            <while expression="n&lt;=0">
+                <output expression="&quot;Khong hop le. Thu lai:&quot;" newline="True"/>
+                <input variable="n"/>
+            </while>
+            <while expression="i&lt;=n">
+                <assign variable="sum" expression="sum+i"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <output expression="&quot;Tong cac so nguyen tu 1 toi so ban vua nhap la:&quot;" newline="True"/>
+            <output expression="sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="thao4"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-11-22 02:14:19 CH"/>
+        <attribute name="created" value="dGhhbzQ7REVTS1RPUC1GS0NVVk5UOzIwMjEtMTEtMjI7MDI6MTE6MjUgQ0g7Mjg1Ng=="/>
+        <attribute name="edited" value="dGhhbzQ7REVTS1RPUC1GS0NVVk5UOzIwMjEtMTEtMjI7MDI6MTQ6MTkgQ0g7MTsyOTcw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, x" type="Real" array="False" size=""/>
+            <output expression="&quot; Nhap a va b:&quot;" newline="True"/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <if expression="a==0">
+                <then>
+                    <if expression="b==0">
+                        <then>
+                            <output expression="&quot;PTVSN&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;PTVN&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;PT co nghiem&quot;" newline="True"/>
+                    <assign variable="x" expression="-b/a"/>
+                    <output expression="x" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

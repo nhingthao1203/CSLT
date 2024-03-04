@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="thao4"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-10-25 02:52:27 CH"/>
+        <attribute name="created" value="dGhhbzQ7REVTS1RPUC1GS0NVVk5UOzIwMjEtMTAtMjM7MTE6NDk6NTAgU0E7Mjg3NA=="/>
+        <attribute name="edited" value="dGhhbzQ7REVTS1RPUC1GS0NVVk5UOzIwMjEtMTAtMjU7MDI6NTI6MjcgQ0g7NzsyOTc5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, denta, x1, x2" type="Real" array="False" size=""/>
+            <output expression="&quot;Nhap a:&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Nhap b:&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;Nhap c:&quot;" newline="True"/>
+            <input variable="c"/>
+            <if expression="a=0">
+                <then>
+                    <if expression="b=0">
+                        <then>
+                            <if expression="c=0">
+                                <then>
+                                    <output expression="&quot;Pt vo so nghiem&quot;" newline="True"/>
+                                    <breakpoint/>
+                                </then>
+                                <else/>
+                            </if>
+                            <output expression="&quot;Pt vo nghiem&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Pt co mot nghiem x= &quot;" newline="True"/>
+                            <assign variable="x1" expression="-c/b"/>
+                        </else>
+                    </if>
+                    <breakpoint/>
+                </then>
+                <else/>
+            </if>
+            <assign variable="denta" expression="(b*b)-(4*a*c)"/>
+            <if expression="denta&gt;0">
+                <then>
+                    <output expression="&quot;Pt co hai nghiem pb&quot;" newline="True"/>
+                    <assign variable="x1" expression="(-b+sqrt(denta))/(2*a)"/>
+                    <output expression="x1" newline="True"/>
+                    <assign variable="x2" expression="(-b-sqrt(denta))/(2*a)"/>
+                    <output expression="x2" newline="True"/>
+                </then>
+                <else>
+                    <if expression="denta=0">
+                        <then>
+                            <output expression="&quot;Pt co nghiem kep&quot;" newline="True"/>
+                            <assign variable="x1" expression="-b/(2*a)"/>
+                            <output expression="x1" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Pt vo nghiem&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
